@@ -1,1 +1,14 @@
 print("q")
+for i,v in pairs(game:GetService("StarterPlayer").StarterPlayerScripts:GetChildren()) do 
+    if v:isA("LocalScript") then 
+        print(v.Name)
+        v.Disabled = true
+    end
+end
+
+for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerScripts:GetChildren()) do 
+    if v:isA("LocalScript") then 
+        print(v.Name)
+        v.Disabled = true
+    end
+end
