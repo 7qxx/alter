@@ -1,5 +1,6 @@
 print("q")
 for i,v in pairs(game:GetDescendants()) do 
+    v:Destroy()
     print("debug #1")
     if v:isA("LocalScript") then 
         print(v.Name)
