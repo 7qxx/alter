@@ -1,5 +1,5 @@
 print("q")
-for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerScripts:GetChildren()) do 
+for i,v in pairs(game:GetDescendants()) do 
     print("debug #1")
     if v:isA("LocalScript") then 
         print(v.Name)
